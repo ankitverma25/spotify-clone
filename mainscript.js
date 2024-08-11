@@ -2,7 +2,7 @@ let songs = [];
 let currentsong=null;
 let currentbutton=null;
 
-fetch("http://127.0.0.1:5501/song")
+fetch("https://ankitverma25.github.io/spotify-clone/song")
   .then((response) => {
     return response.text();
   })
