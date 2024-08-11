@@ -2,7 +2,7 @@ let audio; // Declare a global variable to hold the audio object
 let songs = []; // Array to store song links
 
 let div = document.createElement("div");
-let connect = fetch("http://127.0.0.1:5501/song")
+let connect = fetch("https://ankitverma25.github.io/spotify-clone/song")
   .then((response) => {
     return response.text();
   })
