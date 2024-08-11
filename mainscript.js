@@ -2,7 +2,7 @@ let songs = [];
 let currentsong=null;
 let currentbutton=null;
 
-fetch("https://github.com/ankitverma25/spotify-clone/tree/main/song")
+fetch("https://ankitverma25.github.io/spotify-clone/assets/song")
   .then((response) => {
     return response.text();
   })
