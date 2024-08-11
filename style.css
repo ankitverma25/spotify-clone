@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    background-color: black;
+    min-height: 100vh;
+    gap: 2px;
+}
+.right{
+    width: 25vw;
+
+}
+.home{
+    padding: 15px;
+    margin: 6px;
+    background-color:#242323;
+    height: 121px;
+    border-radius: 9px;
+}
+.logo{
+    margin-left: 4px;;
+}
+.home img{
+    filter: invert(1);
+}
+.home ul{
+    margin-top:6px;
+    list-style:none;
+}
+.home li{
+    font-size: 16px;
+    color: aliceblue;
+    display: flex;
+    gap: 16px;
+    padding-top: 17px;
+    padding-left: 4px;
+}
+
+.imghome{
+    height: 20px;
+}
+.library{
+    position: relative;
+    padding: 5px;
+    margin: 6px;
+    background-color:#242323;
+    min-height: 486px;
+    border-radius: 9px;
+}
+.librarylogo{
+    margin: 10px;
+    display: flex;
+    gap:20px ;
+
+}
+.library img{
+    height: 27px;
+    filter: invert();
+
+}
+.libraryhead{
+    font-size: 14px;
+    margin-top: 9px;
+    color: #ffffff;
+}
+.playlist{
+    color: #ffffff;
+    margin-left:5px ;
+    margin-top: 20px;
+    background-color: #242323;
+    max-height: 150px;
+    border-radius: 12px;
+    overflow-y:scroll;
+    scroll-behavior:smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(94, 93, 93) rgba(223, 221, 221, 0.004);
+}
+
+.create-playlist{
+    background-color: #201f1f;
+    margin-top: 11px;
+    height: 110px;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 32px;    
+    overflow-y:scroll;
+    scroll-behavior:smooth;
+    scrollbar-width:thin;
+    scrollbar-color: rgb(94, 93, 93) rgba(223, 221, 221, 0.004);
+}
+.create-playlist::-webkit-scrollbar {
+    width: 2px; /* Scrollbar width */
+}
+
+.create-playlist::-webkit-scrollbar-track {
+    background: rgba(223, 221, 221, 0.004); /* Scrollbar track background */
+}
+
+.create-playlist::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 93, 93); /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+    border: 2px solid rgba(223, 221, 221, 0.004); /* Padding around scrollbar thumb */
+}
+
+.create-playlist::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+.broadcast h4{
+    font-size: 17px;
+}
+
+
+.broadcast{
+    line-height: 30px;
+    font-size: 16px;
+    background-color: #201f1f;
+    margin-top: 11px;
+    height: 110px;
+    padding: 12px;
+    border-radius: 12px;   
+    overflow-y:scroll;
+    scroll-behavior:smooth;
+    scrollbar-width:thin;
+    scrollbar-color: rgb(94, 93, 93) rgba(223, 221, 221, 0.004);
+
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+}
+.info a{
+    color: #ffffff;
+}
+.footer{
+    position: absolute;
+    bottom: 62px;
+}
+.footer-info a{
+    color: #ffffff;
+}
+.cookies {
+    padding-top: 8px;
+}
+
+
+
+.left{
+    width: 75vw;
+
+}
+.left-container{
+    margin: 6px 4px 3px -1px;
+    min-height: 652px;
+    background-color: #383838;
+    border-radius: 15px;
+}
+.left-head{   
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    height: 40px;
+    background-color: #242323;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+}
+
+.login-btn{
+    padding: 7px 14px 7px 19px;
+    font-size: 16px;
+    border-radius: 29px;
+    font-weight: 600;
+}
+
+.signin-btn{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 9px;
+    font-weight: 600;
+}
+.spotify-playlist{
+    padding: 7px;
+}
+
+.playlist-container{
+    background-color:#383838;
+    max-height: 520px;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scroll-behavior:smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(94, 93, 93) rgba(223, 221, 221, 0.004);
+}
+.newplaylist-conatiner{
+    background-color: #383838;
+    padding: 7px;
+    border-radius: 12px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.card{
+    padding: 4px;
+    background-color: #4f4f4f;
+    width: 145px;
+    height: 200px;
+    border-radius: 11px;
+    margin: 5px;
+}
+.songimg{
+    padding-top: 16px;
+    padding-left: 5px;
+    width: 138px;
+    height: 99px;
+    object-fit: contain;
+    border-radius: 7px;
+    filter: invert(1);
+}
+.playlist-song{
+    border-radius: 12px;
+    padding: 5px;
+    background-color: red;
+}

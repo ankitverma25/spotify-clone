@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Song Cards</title>
+    <style>
+        /* Basic card styling */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            max-width: 300px;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        .card button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="songContainer"></div>
+
+    <script>
+        // Array of song paths (replace these with the actual paths in your folder)
+        const songs = [
+            'path/to/song1.mp3',
+            'path/to/song2.mp3',
+            'path/to/song3.mp3'
+            // Add more songs as needed
+        ];
+
+        // Function to create a card for each song
+        function createSongCard(song, index) {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            const title = document.createElement('h3');
+            title.textContent = `Song ${index + 1}`;
+            card.appendChild(title);
+
+            const playButton = document.createElement('button');
+            playButton.textContent = 'Play';
+            playButton.onclick = () => playSong(song);
+            card.appendChild(playButton);
+
+            document.getElementById('songContainer').appendChild(card);
+        }
+
+        // Function to play the selected song
+        function playSong(songPath) {
+            const audio = new Audio(songPath);
+            audio.play();
+        }
+
+        // Load all songs and create cards
+        songs.forEach((song, index) => createSongCard(song, index));
+    </script>
+
+</body>
+</html>
